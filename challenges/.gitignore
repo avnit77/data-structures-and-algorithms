@@ -1,0 +1,10 @@
+# Created by https://www.gitignore.io/api/vim,osx,linux,node
+db
+temp
+data
+.env
+*.env
+
+# Dependency directories
+node_modules
+jspm_packages
