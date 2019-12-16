@@ -1,23 +1,30 @@
-const { Node, LinkedList } = require('../ll-insertions/ll-insertions.js');
+const { LinkedList, Node } = require('../ll-insertions/ll-insertions.js');
 
-describe('ll-insertions', () => {
-    // beforeEach(() => {
-        // console.log(this, "this")
-        // recipe = await Recipe.create({
-        //   name: 'cookies',
-        //   ingredients: [
-        //     { name: 'flour', amount: 1, measurement: 'cup' }
-        //   ],
-        //   directions: [
-        //     'preheat oven to 375',
-        //     'mix ingredients',
-        //     'put dough on cookie sheet',
-        //     'bake for 10 minutes'
-        //   ],
-        // });
-    it('should add a node to the end of a linked list', () => {
-        LinkedList.head = 1
-        expect(appendValue(2).toEqual(1, 2);
-        // expect(([4, 8, 15, 23, 42], 16)).toEqual([4, 8, 15, 16, 23, 42]);
-    });
+describe('LinkedList Class', () => {
+  const linkedList = new LinkedList();
+  const node = new Node();
+  it ('successfully instantiates an empty linked list', () => {
+    expect(linkedList.head).toBeNull;
+  });
+  it ('adds a node to the beginning of a linked list', () => {
+      linkedList.insert(1);
+      expect(linkedList.head).toEqual({ 'value': 1, 'next': null })
+  })
+  it('successfully adds a node to the end of the linked list', () => {
+    linkedList.append(10);
+    expect(linkedList.includes(10)).toBeTruthy;
+  });
+  it('successfully adds multiple nodes to the end of a linked list', () => {
+    linkedList.append(11);
+    linkedList.append(12);
+    expect(linkedList.toString()).toEqual('1 -> 10 -> 11 -> 12');
+  });
+  it('successfully inserts a node before a node located in the middle of a linked list', () => {
+    linkedList.insertBefore(9, 10);
+    expect(linkedList.toString()).toEqual('1 -> 9 -> 10 -> 11 -> 12');
+  });
+  it('successfully inserts a node at the end of a linked list', () => {
+    linkedList.insertAfter(13, 12);
+    expect(linkedList.toString()).toEqual('1 -> 9 -> 10 -> 11 -> 12 -> 13');
+  });
 });
