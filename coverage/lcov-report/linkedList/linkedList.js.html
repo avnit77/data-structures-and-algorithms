@@ -132,25 +132,28 @@
 <a name='L84'></a><a href='#L84'>84</a>
 <a name='L85'></a><a href='#L85'>85</a>
 <a name='L86'></a><a href='#L86'>86</a>
-<a name='L87'></a><a href='#L87'>87</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -165,14 +168,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">17x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -218,99 +221,105 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">class Node {
-    constructor(value)
-    {
-        this.value = value;
-        this.next = null;
-    }
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">class Node {
+  constructor(value)
+  {
+    this.value = value;
+    this.next = null;
+  }
 }
 &nbsp;
 class LinkedList {
-    constructor(){
-        this.head = null;
-        this.length = 0;
-    }
+  constructor(){
+    this.head = null;
+    this.length = 0;
+  }
 &nbsp;
-    insert(value){
-        const node = new Node(value);
-        node.next = this.head;
-        this.head = node;
-        this.length ++;
+  insert(value){
+    const node = new Node(value);
+    node.next = this.head;
+    this.head = node;
+    this.length ++;
+  }
+&nbsp;
+  includes(value){
+    let currentNode = this.head;
+    while(currentNode){
+      if(currentNode.value === value){
+        return true;
       }
-&nbsp;
-    includes(value){
-        let currentNode = this.head;
-        while(currentNode){
-          if(currentNode.value === value){
-            return true;
-          }
-          currentNode = currentNode.next;
-        }
-<span class="cstat-no" title="statement not covered" >        return false;</span>
-      }
-&nbsp;
-      toString(){
-        let str = '';
-        let currentNode = this.head;
-        str += currentNode.value;
-        while(currentNode.next !== null){
-          currentNode = currentNode.next;
-          str += ` -&gt; ${currentNode.value.toString()}`;
-        }
-        return str;
-      }
-&nbsp;
-    append(value) {
-        let node = new Node(value);
-        let current = this.head;
-        while(current.next !== null){
-            current = current.next;
-        }
-        current.next = node;
-        this.length ++;
+      currentNode = currentNode.next;
     }
-    insertBefore(newValue, value) {
-        let node = new Node(newValue);
-        this.length ++;
-        let current = this.head;
-        let previous;
-        while(current.value !== value) {
-            previous = current;
-            current = current.next
-        }
-        node.next = current;
-        previous.next = node;
-    }
-    insertAfter(newValue, value) {
-        let node = new Node(newValue);
-        let current = this.head;
-        this.length ++
+<span class="cstat-no" title="statement not covered" >    return false;</span>
+  }
 &nbsp;
-        while(current.value != value){
-            current = current.next;
-        }
-        current.next = node;
+  toString(){
+    let str = '';
+    let currentNode = this.head;
+    str += currentNode.value;
+    while(currentNode.next !== null){
+      currentNode = currentNode.next;
+      str += ` -&gt; ${currentNode.value.toString()}`;
     }
-    kthFromEnd(k) {
-        let current = this.head;
-        if(k &gt; this.length - 1 || k &lt; 0) {
-            return 'exception';
-        }
-        for(let i = 0; i &lt; this.length - k - 1; i++) {
-            current = current.next;
-        }
-        return current.value;
+    return str;
+  }
+&nbsp;
+  append(value) {
+    let node = new Node(value);
+    let current = this.head;
+    while(current.next !== null){
+      current = current.next;
     }
+    current.next = node;
+    this.length ++;
+  }
+  insertBefore(newValue, value) {
+    let node = new Node(newValue);
+    this.length ++;
+    let current = this.head;
+    let previous;
+    while(current.value !== value) {
+      previous = current;
+      current = current.next;
+    }
+    node.next = current;
+    previous.next = node;
+  }
+  insertAfter(newValue, value) {
+    let node = new Node(newValue);
+    let current = this.head;
+    this.length ++;
+&nbsp;
+    while(current.value != value){
+      current = current.next;
+    }
+    current.next = node;
+  }
+  kthFromEnd(k) {
+    let current = this.head;
+    if(k &gt; this.length - 1 || k &lt; 0) {
+      return 'exception';
+    }
+    for(let i = 0; i &lt; this.length - k - 1; i++) {
+      current = current.next;
+    }
+    return current.value;
+  }
 }
 &nbsp;
-module.exports = { Node, LinkedList };</pre></td></tr>
+&nbsp;
+&nbsp;
+module.exports = { Node, LinkedList };
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 15 2019 19:05:22 GMT-0800 (Pacific Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 15 2019 23:12:06 GMT-0800 (Pacific Standard Time)
 </div>
 </div>
 <script src="../prettify.js"></script>
