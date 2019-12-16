@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576460905436" clover="3.2.0">
-  <project timestamp="1576460905436" name="All files">
-    <metrics statements="69" coveredstatements="58" conditionals="16" coveredconditionals="10" methods="11" coveredmethods="10" elements="96" coveredelements="78" complexity="0" loc="69" ncloc="69" packages="3" files="3" classes="3"/>
+<coverage generated="1576465522413" clover="3.2.0">
+  <project timestamp="1576465522413" name="All files">
+    <metrics statements="75" coveredstatements="64" conditionals="20" coveredconditionals="14" methods="12" coveredmethods="11" elements="107" coveredelements="89" complexity="0" loc="75" ncloc="75" packages="3" files="3" classes="3"/>
     <package name="array-shift">
       <metrics statements="20" coveredstatements="10" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/array-shift/array-shift.js">
@@ -41,18 +41,18 @@
         <line num="14" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="ll-insertions">
-      <metrics statements="42" coveredstatements="41" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
-      <file name="ll-insertions.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/ll-insertions/ll-insertions.js">
-        <metrics statements="42" coveredstatements="41" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+    <package name="linkedList">
+      <metrics statements="48" coveredstatements="47" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9"/>
+      <file name="linkedList.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/linkedList/linkedList.js">
+        <metrics statements="48" coveredstatements="47" conditionals="6" coveredconditionals="6" methods="9" coveredmethods="9"/>
+        <line num="4" count="10" type="stmt"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
@@ -86,7 +86,13 @@
         <line num="70" count="1" type="stmt"/>
         <line num="71" count="4" type="stmt"/>
         <line num="73" count="1" type="stmt"/>
-        <line num="77" count="1" type="stmt"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="77" count="3" type="cond" truecount="4" falsecount="0"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="87" count="2" type="stmt"/>
       </file>
     </package>
   </project>
