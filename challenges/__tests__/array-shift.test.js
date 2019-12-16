@@ -8,8 +8,8 @@ const { insertIntoArray, removeMiddle } = require('../array-shift/array-shift.js
 // });
 
 describe('array remove middle function', () => {
-    it('should take out middle value and other elements should fill gap', () => {
-        expect(removeMiddle([2, 4, 5, 6, 8])).toEqual([2, 4, 6, 8]);
-        expect(removeMiddle([4, 8, 15, 16, 23, 42])).toEqual([4, 8, 15, 23, 42]);
-    });
+  it('should take out middle value and other elements should fill gap', () => {
+    expect(removeMiddle([2, 4, 5, 6, 8])).toEqual([2, 4, 6, 8]);
+    expect(removeMiddle([4, 8, 15, 16, 23, 42])).toEqual([4, 8, 15, 23, 42]);
+  });
 });
