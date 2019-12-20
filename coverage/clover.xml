@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576862482425" clover="3.2.0">
-  <project timestamp="1576862482425" name="All files">
-    <metrics statements="127" coveredstatements="109" conditionals="36" coveredconditionals="26" methods="26" coveredmethods="24" elements="189" coveredelements="159" complexity="0" loc="127" ncloc="127" packages="6" files="6" classes="6"/>
+<coverage generated="1576870445264" clover="3.2.0">
+  <project timestamp="1576870445264" name="All files">
+    <metrics statements="143" coveredstatements="125" conditionals="49" coveredconditionals="39" methods="28" coveredmethods="26" elements="220" coveredelements="190" complexity="0" loc="143" ncloc="143" packages="7" files="7" classes="7"/>
     <package name="array-shift">
       <metrics statements="20" coveredstatements="10" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/array-shift/array-shift.js">
@@ -132,6 +132,28 @@
         <line num="13" count="4" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="multiBracketValidation">
+      <metrics statements="16" coveredstatements="16" conditionals="13" coveredconditionals="13" methods="2" coveredmethods="2"/>
+      <file name="multi-bracket-validation.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/multiBracketValidation/multi-bracket-validation.js">
+        <metrics statements="16" coveredstatements="16" conditionals="13" coveredconditionals="13" methods="2" coveredmethods="2"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="35" type="cond" truecount="5" falsecount="0"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="35" type="cond" truecount="2" falsecount="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="queueWithStacks">
