@@ -13,7 +13,7 @@ class AnimalShelter {
 
   enqueue(animal){
     if(animal.type != 'dog' && animal.type != 'cat'){
-      return null;
+      return 'No thank you. We like dogs and cats';
     }
     this.pets.push(animal);
   }
@@ -30,7 +30,7 @@ class AnimalShelter {
         return adopted;
       }
     }
-    return 'no pet for you';
+    return 'Can I interest you in a cat or a dog?';
   }
 
 }

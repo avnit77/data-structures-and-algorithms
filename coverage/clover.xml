@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576817334517" clover="3.2.0">
-  <project timestamp="1576817334518" name="All files">
-    <metrics statements="128" coveredstatements="110" conditionals="36" coveredconditionals="26" methods="26" coveredmethods="24" elements="190" coveredelements="160" complexity="0" loc="128" ncloc="128" packages="6" files="6" classes="6"/>
+<coverage generated="1576862482425" clover="3.2.0">
+  <project timestamp="1576862482425" name="All files">
+    <metrics statements="127" coveredstatements="109" conditionals="36" coveredconditionals="26" methods="26" coveredmethods="24" elements="189" coveredelements="159" complexity="0" loc="127" ncloc="127" packages="6" files="6" classes="6"/>
     <package name="array-shift">
       <metrics statements="20" coveredstatements="10" conditionals="10" coveredconditionals="4" methods="2" coveredmethods="1"/>
       <file name="array-shift.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/array-shift/array-shift.js">
@@ -42,24 +42,23 @@
       </file>
     </package>
     <package name="fifoAnimalShelter">
-      <metrics statements="15" coveredstatements="13" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
+      <metrics statements="14" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
       <file name="fifo-animal-shelter.js" path="/home/tali/alchemy/career-prep/code-challenges/data-structures-and-algorithms/challenges/fifoAnimalShelter/fifo-animal-shelter.js">
-        <metrics statements="15" coveredstatements="13" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
+        <metrics statements="14" coveredstatements="12" conditionals="8" coveredconditionals="7" methods="4" coveredmethods="4"/>
         <line num="3" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="15" count="3" type="cond" truecount="3" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="24" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="28" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
       </file>
     </package>
     <package name="linkedList">
