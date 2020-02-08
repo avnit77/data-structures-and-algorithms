@@ -28,7 +28,9 @@ describe('BinaryTree class', () => {
     tree.add(10);
     tree.add(5);
     tree.add(15);
-    expect(tree.postOrder(tree.root)).toEqual([15, 10, 5]);
+    tree.add(20);
+    tree.add(3);
+    expect(tree.postOrder(tree.root)).toEqual([20, 15, 10, 5, 3]);
   });
   it('returns true if a value is contained in the tree', () => {
     tree.add(10);

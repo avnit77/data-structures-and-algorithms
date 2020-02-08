@@ -31,6 +31,7 @@ class BinaryTree {
     return array;
   }
 
+
   postOrder(node){
     let array = [];
     if(node !== null){
