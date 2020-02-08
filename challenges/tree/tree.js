@@ -31,7 +31,6 @@ class BinaryTree {
     return array;
   }
 
-
   postOrder(node){
     let array = [];
     if(node !== null){
@@ -42,6 +41,26 @@ class BinaryTree {
     }
     return array;
   }
+
+  breadth(){
+    let tree = [this.root];
+    let array = [];
+    while(tree.length > 0){
+      let node = tree.shift();
+      array.push(node.data);
+      if(!node.left && !node.right) {
+        continue;
+      }
+      if(node.left) {
+        tree.push(node.left);
+      }
+      if(node.right){
+        tree.push(node.right);
+      }
+    }
+    return array;
+  }
+
 
   contains(data){
     const array = this.inOrder(this.root);
